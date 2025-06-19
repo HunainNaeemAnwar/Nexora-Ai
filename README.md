@@ -1,54 +1,52 @@
-# React + TypeScript + Vite
+# Nexora Chatbot — React + Tailwind CSS + Google Gen AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean production-ready AI chatbot built using **React**, **Tailwind CSS**, and **Google's Gemini SDK**. Designed for developers who value performance, simplicity, and elegant UI. It supports **persistent chat history**, **real-time AI conversations**, and can be deployed with minimal setup.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+-  Real-time AI chat using Gemini (Google Generative AI SDK)
+-  Persistent conversation history using `useState` 
+- Clean, responsive UI with Tailwind CSS
+- Secure API key via `.env` config
+- Uses **Lucide React Icons**
+- Optional 3D-ready setup with `three.js` and `react-three-fiber` (for future enhancement)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+##  Tech Stack
+
+- **React 19** – Core frontend framework
+- **Tailwind CSS** – For styling and layout
+- **Vite** – Lightning-fast build tool
+- **Google Gemini SDK** – AI backend
+- **Lucide React** – Icon library
+- **Three.js + React Three Fiber** – (Optional) 3D support
+- **TypeScript** – Type safety and better DX
+- **useState** – For storing conversations
+
+
+
+## Getting Started
+
+### 1. Clone this repo
+```bash
+git clone https://github.com/HunainNaeemAnwar/Nexora-Ai.git
+cd Nexora-Ai
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 2. Install dependencies
+```bash
+npm install
 ```
+### 3. Add your Gemini API key
+Create a .env file in the root and add:
+```env
+GEMINI_API_KEY=your_google_api_key_here
+```
+### 4. Run the dev server
+```bash
+npm run dev
+```
+
