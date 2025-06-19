@@ -64,7 +64,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="fixed bottom-0 bg-[#1E1E1E] w-full py-2 ">
-        <p className="text-white/50 font-inter font-normal text-[14px] text-center italic">
+        <p className="text-white/50 font-inter font-normal text-[13px] text-center italic">
           Start the Conversation
         </p>
       </div>
