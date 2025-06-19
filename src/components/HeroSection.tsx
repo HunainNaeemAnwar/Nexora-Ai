@@ -44,7 +44,7 @@ const HeroSection = () => {
           ></p>
         </div>
       )}
-      <div className="fixed bottom-8 z-10 w-full flex justify-center items-center bg-[#1E1E1E]">
+      <div className="fixed bottom-7 z-10 w-full flex justify-center items-center bg-[#1E1E1E]">
         {" "}
         <div className="relative w-9/12 lg:w-[65%]">
           <input
