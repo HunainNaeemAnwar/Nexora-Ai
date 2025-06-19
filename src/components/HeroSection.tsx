@@ -65,7 +65,7 @@ const HeroSection = () => {
       </div>
       <div className="fixed bottom-0 bg-[#1E1E1E] w-full py-2 ">
         <p className="text-white/50 font-inter font-normal text-[14px] text-center italic">
-          I can handle you with smoothness
+          Start the Conversation
         </p>
       </div>
     </section>

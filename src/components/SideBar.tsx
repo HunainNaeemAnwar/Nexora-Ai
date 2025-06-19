@@ -1,6 +1,7 @@
 import { Menu, PlusIcon } from "lucide-react";
 import { useState, useContext } from "react";
 import AppContext from "../context/AppContext";
+import "../css/scroll.css"
 
 const SideBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +53,7 @@ const SideBar = () => {
         } transition-all duration-300 `}
       >
         <p className="font-montserrat text-[18px] md:text-xl">Chats</p>
-        <div className="flex flex-col text-[14px] md:text-sm gap-4">
+        <div className="flex flex-col text-[14px] md:text-sm gap-4 overflow-y-auto max-h-60 no-scrollbar">
           {prevPrompt.map((chat, index) => (
             <p
               key={index}

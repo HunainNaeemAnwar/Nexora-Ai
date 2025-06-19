@@ -21,10 +21,9 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
     setShowResult(false);
   };
   const onSent = async (prompt?: string): Promise<void> => {
-    const userQuestion = (prompt ?? input).trim(); // same name, fixed logic
+    const userQuestion = (prompt ?? input).trim(); 
 
-    if (!userQuestion) return; // agar khali hai to exit, kuch mat karo
-
+    if (!userQuestion) return;
     setUserQuestion(userQuestion);
     setPrevPrompt((prev) =>
       prev.includes(userQuestion) ? prev : [...prev, userQuestion]
